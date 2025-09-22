@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Botão com Música</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="document.getElementById('musica').play()">Tocar Música</button>
+
+  <!-- O arquivo mp3 deve estar no mesmo repositório -->
+  <audio id="musica" src="musica.mp3"></audio>
+
+</body>
+</html>
